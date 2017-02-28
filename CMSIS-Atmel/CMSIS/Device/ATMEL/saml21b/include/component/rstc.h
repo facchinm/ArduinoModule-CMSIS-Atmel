@@ -58,20 +58,20 @@ typedef union {
 #define RSTC_RCAUSE_OFFSET          0x00         /**< \brief (RSTC_RCAUSE offset) Reset Cause */
 
 #define RSTC_RCAUSE_POR_Pos         0            /**< \brief (RSTC_RCAUSE) Power On Reset */
-#define RSTC_RCAUSE_POR             (_U(0x1) << RSTC_RCAUSE_POR_Pos)
+#define RSTC_RCAUSE_POR             ((0x1) << RSTC_RCAUSE_POR_Pos)
 #define RSTC_RCAUSE_BOD12_Pos       1            /**< \brief (RSTC_RCAUSE) Brown Out 12 Detector Reset */
-#define RSTC_RCAUSE_BOD12           (_U(0x1) << RSTC_RCAUSE_BOD12_Pos)
+#define RSTC_RCAUSE_BOD12           ((0x1) << RSTC_RCAUSE_BOD12_Pos)
 #define RSTC_RCAUSE_BOD33_Pos       2            /**< \brief (RSTC_RCAUSE) Brown Out 33 Detector Reset */
-#define RSTC_RCAUSE_BOD33           (_U(0x1) << RSTC_RCAUSE_BOD33_Pos)
+#define RSTC_RCAUSE_BOD33           ((0x1) << RSTC_RCAUSE_BOD33_Pos)
 #define RSTC_RCAUSE_EXT_Pos         4            /**< \brief (RSTC_RCAUSE) External Reset */
-#define RSTC_RCAUSE_EXT             (_U(0x1) << RSTC_RCAUSE_EXT_Pos)
+#define RSTC_RCAUSE_EXT             ((0x1) << RSTC_RCAUSE_EXT_Pos)
 #define RSTC_RCAUSE_WDT_Pos         5            /**< \brief (RSTC_RCAUSE) Watchdog Reset */
-#define RSTC_RCAUSE_WDT             (_U(0x1) << RSTC_RCAUSE_WDT_Pos)
+#define RSTC_RCAUSE_WDT             ((0x1) << RSTC_RCAUSE_WDT_Pos)
 #define RSTC_RCAUSE_SYST_Pos        6            /**< \brief (RSTC_RCAUSE) System Reset Request */
-#define RSTC_RCAUSE_SYST            (_U(0x1) << RSTC_RCAUSE_SYST_Pos)
+#define RSTC_RCAUSE_SYST            ((0x1) << RSTC_RCAUSE_SYST_Pos)
 #define RSTC_RCAUSE_BACKUP_Pos      7            /**< \brief (RSTC_RCAUSE) Backup Reset */
-#define RSTC_RCAUSE_BACKUP          (_U(0x1) << RSTC_RCAUSE_BACKUP_Pos)
-#define RSTC_RCAUSE_MASK            _U(0xF7)     /**< \brief (RSTC_RCAUSE) MASK Register */
+#define RSTC_RCAUSE_BACKUP          ((0x1) << RSTC_RCAUSE_BACKUP_Pos)
+#define RSTC_RCAUSE_MASK            (0xF7)     /**< \brief (RSTC_RCAUSE) MASK Register */
 
 /* -------- RSTC_BKUPEXIT : (RSTC Offset: 0x02) (R/   8) Backup Exit Source -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -89,12 +89,12 @@ typedef union {
 #define RSTC_BKUPEXIT_OFFSET        0x02         /**< \brief (RSTC_BKUPEXIT offset) Backup Exit Source */
 
 #define RSTC_BKUPEXIT_EXTWAKE_Pos   0            /**< \brief (RSTC_BKUPEXIT) External Wakeup */
-#define RSTC_BKUPEXIT_EXTWAKE       (_U(0x1) << RSTC_BKUPEXIT_EXTWAKE_Pos)
+#define RSTC_BKUPEXIT_EXTWAKE       ((0x1) << RSTC_BKUPEXIT_EXTWAKE_Pos)
 #define RSTC_BKUPEXIT_RTC_Pos       1            /**< \brief (RSTC_BKUPEXIT) Real Timer Counter Interrupt */
-#define RSTC_BKUPEXIT_RTC           (_U(0x1) << RSTC_BKUPEXIT_RTC_Pos)
+#define RSTC_BKUPEXIT_RTC           ((0x1) << RSTC_BKUPEXIT_RTC_Pos)
 #define RSTC_BKUPEXIT_BBPS_Pos      2            /**< \brief (RSTC_BKUPEXIT) Battery Backup Power Switch */
-#define RSTC_BKUPEXIT_BBPS          (_U(0x1) << RSTC_BKUPEXIT_BBPS_Pos)
-#define RSTC_BKUPEXIT_MASK          _U(0x07)     /**< \brief (RSTC_BKUPEXIT) MASK Register */
+#define RSTC_BKUPEXIT_BBPS          ((0x1) << RSTC_BKUPEXIT_BBPS_Pos)
+#define RSTC_BKUPEXIT_MASK          (0x07)     /**< \brief (RSTC_BKUPEXIT) MASK Register */
 
 /* -------- RSTC_WKDBCONF : (RSTC Offset: 0x04) (R/W  8) Wakeup Debounce Configuration -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -108,18 +108,18 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RSTC_WKDBCONF_OFFSET        0x04         /**< \brief (RSTC_WKDBCONF offset) Wakeup Debounce Configuration */
-#define RSTC_WKDBCONF_RESETVALUE    _U(0x00);    /**< \brief (RSTC_WKDBCONF reset_value) Wakeup Debounce Configuration */
+#define RSTC_WKDBCONF_RESETVALUE    (0x00);    /**< \brief (RSTC_WKDBCONF reset_value) Wakeup Debounce Configuration */
 
 #define RSTC_WKDBCONF_WKDBCNT_Pos   0            /**< \brief (RSTC_WKDBCONF) Wakeup Debounce Counter */
-#define RSTC_WKDBCONF_WKDBCNT_Msk   (_U(0x1F) << RSTC_WKDBCONF_WKDBCNT_Pos)
+#define RSTC_WKDBCONF_WKDBCNT_Msk   ((0x1F) << RSTC_WKDBCONF_WKDBCNT_Pos)
 #define RSTC_WKDBCONF_WKDBCNT(value) (RSTC_WKDBCONF_WKDBCNT_Msk & ((value) << RSTC_WKDBCONF_WKDBCNT_Pos))
-#define   RSTC_WKDBCONF_WKDBCNT_OFF_Val   _U(0x0)   /**< \brief (RSTC_WKDBCONF) No debouncing.Input pin is low or high level sensitive depending on its WKPOLx bit. */
-#define   RSTC_WKDBCONF_WKDBCNT_2CK32_Val _U(0x1)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least two 32kHz clock period. */
-#define   RSTC_WKDBCONF_WKDBCNT_3CK32_Val _U(0x2)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least three 32kHz clock period. */
-#define   RSTC_WKDBCONF_WKDBCNT_32CK32_Val _U(0x3)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least 32 32kHz clock period. */
-#define   RSTC_WKDBCONF_WKDBCNT_512CK32_Val _U(0x4)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least 512 32kHz clock period. */
-#define   RSTC_WKDBCONF_WKDBCNT_4096CK32_Val _U(0x5)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least 4096 32kHz clock period. */
-#define   RSTC_WKDBCONF_WKDBCNT_32768CK32_Val _U(0x6)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least 32768 32kHz clock period. */
+#define   RSTC_WKDBCONF_WKDBCNT_OFF_Val   (0x0)   /**< \brief (RSTC_WKDBCONF) No debouncing.Input pin is low or high level sensitive depending on its WKPOLx bit. */
+#define   RSTC_WKDBCONF_WKDBCNT_2CK32_Val (0x1)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least two 32kHz clock period. */
+#define   RSTC_WKDBCONF_WKDBCNT_3CK32_Val (0x2)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least three 32kHz clock period. */
+#define   RSTC_WKDBCONF_WKDBCNT_32CK32_Val (0x3)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least 32 32kHz clock period. */
+#define   RSTC_WKDBCONF_WKDBCNT_512CK32_Val (0x4)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least 512 32kHz clock period. */
+#define   RSTC_WKDBCONF_WKDBCNT_4096CK32_Val (0x5)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least 4096 32kHz clock period. */
+#define   RSTC_WKDBCONF_WKDBCNT_32768CK32_Val (0x6)   /**< \brief (RSTC_WKDBCONF) Input pin shall be active for at least 32768 32kHz clock period. */
 #define RSTC_WKDBCONF_WKDBCNT_OFF   (RSTC_WKDBCONF_WKDBCNT_OFF_Val << RSTC_WKDBCONF_WKDBCNT_Pos)
 #define RSTC_WKDBCONF_WKDBCNT_2CK32 (RSTC_WKDBCONF_WKDBCNT_2CK32_Val << RSTC_WKDBCONF_WKDBCNT_Pos)
 #define RSTC_WKDBCONF_WKDBCNT_3CK32 (RSTC_WKDBCONF_WKDBCNT_3CK32_Val << RSTC_WKDBCONF_WKDBCNT_Pos)
@@ -127,7 +127,7 @@ typedef union {
 #define RSTC_WKDBCONF_WKDBCNT_512CK32 (RSTC_WKDBCONF_WKDBCNT_512CK32_Val << RSTC_WKDBCONF_WKDBCNT_Pos)
 #define RSTC_WKDBCONF_WKDBCNT_4096CK32 (RSTC_WKDBCONF_WKDBCNT_4096CK32_Val << RSTC_WKDBCONF_WKDBCNT_Pos)
 #define RSTC_WKDBCONF_WKDBCNT_32768CK32 (RSTC_WKDBCONF_WKDBCNT_32768CK32_Val << RSTC_WKDBCONF_WKDBCNT_Pos)
-#define RSTC_WKDBCONF_MASK          _U(0x1F)     /**< \brief (RSTC_WKDBCONF) MASK Register */
+#define RSTC_WKDBCONF_MASK          (0x1F)     /**< \brief (RSTC_WKDBCONF) MASK Register */
 
 /* -------- RSTC_WKPOL : (RSTC Offset: 0x08) (R/W 16) Wakeup Polarity -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -141,12 +141,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RSTC_WKPOL_OFFSET           0x08         /**< \brief (RSTC_WKPOL offset) Wakeup Polarity */
-#define RSTC_WKPOL_RESETVALUE       _U(0x0000);  /**< \brief (RSTC_WKPOL reset_value) Wakeup Polarity */
+#define RSTC_WKPOL_RESETVALUE       (0x0000);  /**< \brief (RSTC_WKPOL reset_value) Wakeup Polarity */
 
 #define RSTC_WKPOL_WKPOL_Pos        0            /**< \brief (RSTC_WKPOL) Wakeup Polarity */
-#define RSTC_WKPOL_WKPOL_Msk        (_U(0xFF) << RSTC_WKPOL_WKPOL_Pos)
+#define RSTC_WKPOL_WKPOL_Msk        ((0xFF) << RSTC_WKPOL_WKPOL_Pos)
 #define RSTC_WKPOL_WKPOL(value)     (RSTC_WKPOL_WKPOL_Msk & ((value) << RSTC_WKPOL_WKPOL_Pos))
-#define RSTC_WKPOL_MASK             _U(0x00FF)   /**< \brief (RSTC_WKPOL) MASK Register */
+#define RSTC_WKPOL_MASK             (0x00FF)   /**< \brief (RSTC_WKPOL) MASK Register */
 
 /* -------- RSTC_WKEN : (RSTC Offset: 0x0C) (R/W 16) Wakeup Enable -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -160,12 +160,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RSTC_WKEN_OFFSET            0x0C         /**< \brief (RSTC_WKEN offset) Wakeup Enable */
-#define RSTC_WKEN_RESETVALUE        _U(0x0000);  /**< \brief (RSTC_WKEN reset_value) Wakeup Enable */
+#define RSTC_WKEN_RESETVALUE        (0x0000);  /**< \brief (RSTC_WKEN reset_value) Wakeup Enable */
 
 #define RSTC_WKEN_WKEN_Pos          0            /**< \brief (RSTC_WKEN) Wakeup Enable */
-#define RSTC_WKEN_WKEN_Msk          (_U(0xFF) << RSTC_WKEN_WKEN_Pos)
+#define RSTC_WKEN_WKEN_Msk          ((0xFF) << RSTC_WKEN_WKEN_Pos)
 #define RSTC_WKEN_WKEN(value)       (RSTC_WKEN_WKEN_Msk & ((value) << RSTC_WKEN_WKEN_Pos))
-#define RSTC_WKEN_MASK              _U(0x00FF)   /**< \brief (RSTC_WKEN) MASK Register */
+#define RSTC_WKEN_MASK              (0x00FF)   /**< \brief (RSTC_WKEN) MASK Register */
 
 /* -------- RSTC_WKCAUSE : (RSTC Offset: 0x10) (R/W 16) Wakeup Cause -------- */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
@@ -178,12 +178,12 @@ typedef union {
 #endif /* !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__)) */
 
 #define RSTC_WKCAUSE_OFFSET         0x10         /**< \brief (RSTC_WKCAUSE offset) Wakeup Cause */
-#define RSTC_WKCAUSE_RESETVALUE     _U(0x0000);  /**< \brief (RSTC_WKCAUSE reset_value) Wakeup Cause */
+#define RSTC_WKCAUSE_RESETVALUE     (0x0000);  /**< \brief (RSTC_WKCAUSE reset_value) Wakeup Cause */
 
 #define RSTC_WKCAUSE_WKCAUSE_Pos    0            /**< \brief (RSTC_WKCAUSE) Wakeup Cause */
-#define RSTC_WKCAUSE_WKCAUSE_Msk    (_U(0xFFFF) << RSTC_WKCAUSE_WKCAUSE_Pos)
+#define RSTC_WKCAUSE_WKCAUSE_Msk    ((0xFFFF) << RSTC_WKCAUSE_WKCAUSE_Pos)
 #define RSTC_WKCAUSE_WKCAUSE(value) (RSTC_WKCAUSE_WKCAUSE_Msk & ((value) << RSTC_WKCAUSE_WKCAUSE_Pos))
-#define RSTC_WKCAUSE_MASK           _U(0xFFFF)   /**< \brief (RSTC_WKCAUSE) MASK Register */
+#define RSTC_WKCAUSE_MASK           (0xFFFF)   /**< \brief (RSTC_WKCAUSE) MASK Register */
 
 /** \brief RSTC hardware registers */
 #if !(defined(__ASSEMBLY__) || defined(__IAR_SYSTEMS_ASM__))
